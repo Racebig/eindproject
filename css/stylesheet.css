@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+/* NAV STYLES */
+
+nav {
+    background: url(../img/background-image-home.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    height: 900px;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover {
+    border: 1px solid;
+    transition: 0.5s ease;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    color: white;
+    font-family: 'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 50px;
+    font-style: italic;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 1350px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 25px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #403F45;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active {
+        background: none;
+        color: #fff;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    label.logo {
+        font-size: 30px;
+    }
+}
+
+.home-title-container {
+    text-align: center;
+    margin-top: 350px;
+}
+
+.home-title-container h1 {
+    color: white;
+    font-family: 'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -2px;
+    font-size: 80px;
+    font-style: italic;
+}
+
+.home-title-container h2 {
+    color: white;
+    font-family: 'Karla';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+/* HOME PAGE INFO STYLES */
+
+.home-subtitle-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.home-subtitle-container h1 {
+    font-family: 'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.home-subtitle-container p {
+    font-family: 'Karla';
+    color: #2a2a2a;
+    line-height: 1.2;
+    letter-spacing: 0.3;
+    margin-top: 10px;
+    padding: 0px 40px 0px 40px;
+}
+
+.home-info-container {
+    margin-top: 60px;
+}
+
+.home-info-section-container {
+    text-align: center;
+}
+
+.home-info-section-container h1 {
+    font-family: 'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.home-info-section-container p {
+    font-family: 'Karla';
+    color: #2a2a2a;
+    line-height: 1.2;
+    letter-spacing: 0.3;
+    margin-top: 10px;
+    padding: 0px 20px 40px 20px;
+}
+
+@media (max-width: 1000px) {
+    .four {
+        width: 100% !important;
+        margin-left: 0;
+    }
+}
+
+/* FOOTER STYLES */
+
+footer {
+    background-color: #403f4507;
+    height: 200px;
+    text-align: center;
+}
+
+footer .footer-title h1{
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 22px;
+}
+
+#footer-middle-media-link {
+    padding-left: 30px;
+    padding-right: 30px;
+}
