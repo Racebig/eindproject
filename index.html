@@ -23,13 +23,101 @@
                 </label>
                 <label class="logo">General Shape</label>
                 <ul>
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Producten</a></li>
-                    <li><a href="#">Account</a></li>
+                    <li><a onclick="DOM.displayLoginForm()">Inloggen</a></li>
                     <li><a href="#">Winkelwagen</a></li>
                 </ul>
+
+                <div style="display: none" class="wrapper" id="register-form">
+                    <div class="title">
+                      Registratie Formulier
+                    </div>
+                    <div class="form">
+                       <div class="inputfield">
+                          <label>Voornaam</label>
+                          <input type="text" class="input">
+                       </div>  
+                        <div class="inputfield">
+                          <label>Achternaam</label>
+                          <input type="text" class="input">
+                       </div>  
+                       <div class="inputfield">
+                          <label>Wachtwoord</label>
+                          <input type="password" class="input">
+                       </div>  
+                      <div class="inputfield">
+                          <label>Bevestig Wachtwoord</label>
+                          <input type="password" class="input">
+                       </div> 
+                        <div class="inputfield">
+                          <label>Gender</label>
+                          <div class="custom_select">
+                            <select>
+                              <option value="">Select</option>
+                              <option value="male">Man</option>
+                              <option value="female">Vrouw</option>
+                              <option value="overig">Overig</option>
+                            </select>
+                          </div>
+                       </div> 
+                        <div class="inputfield">
+                          <label>Email Address</label>
+                          <input type="text" class="input">
+                       </div> 
+                      <div class="inputfield">
+                          <label>Telefoonnummer</label>
+                          <input type="text" class="input">
+                       </div> 
+                      <div class="inputfield">
+                          <label>Address</label>
+                          <textarea class="textarea"></textarea>
+                       </div> 
+                      <div class="inputfield">
+                          <label>Postcode</label>
+                          <input type="text" class="input">
+                       </div> 
+                      <div class="inputfield terms">
+                          <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <p>Agreed to terms and conditions</p>
+                       </div> 
+                      <div class="inputfield">
+                        <input type="submit" value="Registreer" class="btn">
+                      </div>
+                    </div>
+                    <div class="form-buttons">
+                        <a onclick="DOM.displayLoginForm()">Heb je al een account? Login</a>
+                        <a id="exit-button" onclick="DOM.closeForms()">Exit</a>
+                    </div>
+                </div>	
+
+                <div style="display: none" class="wrapper" id="login-form">
+                    <div class="title">
+                      Login Formulier
+                    </div>
+                    <div class="form">
+                        <div class="inputfield">
+                            <label>Email Address</label>
+                            <input type="text" class="input">
+                        </div> 
+                       <div class="inputfield">
+                          <label>Wachtwoord</label>
+                          <input type="password" class="input">
+                       </div>  
+                      <div class="inputfield">
+                        <input type="submit" value="Registreer" class="btn">
+                      </div>
+                    </div>
+                    <div class="form-buttons">
+                        <a onclick="DOM.displayRegisterForm()">Heb je al een account? Registreer</a>
+                        <a id="exit-button" onclick="DOM.closeForms()">Exit</a>
+                    </div>
+                </div>	
 
                 <div class="home-title-container">
                     <h1>Gijs Linders</h1>
@@ -38,6 +126,9 @@
             </nav>
         </header>
     </div>
+</nav>
+</header>
+</div>
 
     <main>
         <div class="row">
@@ -91,7 +182,7 @@
     <div class="row">
         <footer>
             <div class="footer-title">
-                <h1>Connect with us</h1>
+                <h1>Volg ons</h1>
             </div>
             <div class="footer-media-links">
                 <a href="#"><img src="img/001-instagram.png" alt="instagram-icon"></a>
@@ -100,5 +191,7 @@
             </div>
         </footer>
     </div>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
