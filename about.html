@@ -14,6 +14,154 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    
+    <div class="row">
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">General Shape</label>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Producten</a></li>
+                    <li><a onclick="DOM.displayLoginForm()">Inloggen</a></li>
+                    <li><a href="#">Winkelwagen</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <div class="row">
+            <div class="about-info-container">
+                <div class="seven">
+                    <div class="about-info-text">
+                        <div style="display: none" class="wrapper" id="register-form">
+                            <div class="title">
+                              Registratie Formulier
+                            </div>
+                            <div class="form">
+                               <div class="inputfield">
+                                  <label>Voornaam</label>
+                                  <input type="text" class="input">
+                               </div>  
+                                <div class="inputfield">
+                                  <label>Achternaam</label>
+                                  <input type="text" class="input">
+                               </div>  
+                               <div class="inputfield">
+                                  <label>Wachtwoord</label>
+                                  <input type="password" class="input">
+                               </div>  
+                              <div class="inputfield">
+                                  <label>Bevestig Wachtwoord</label>
+                                  <input type="password" class="input">
+                               </div> 
+                                <div class="inputfield">
+                                  <label>Gender</label>
+                                  <div class="custom_select">
+                                    <select>
+                                      <option value="">Select</option>
+                                      <option value="male">Man</option>
+                                      <option value="female">Vrouw</option>
+                                      <option value="overig">Overig</option>
+                                    </select>
+                                  </div>
+                               </div> 
+                                <div class="inputfield">
+                                  <label>Email Address</label>
+                                  <input type="text" class="input">
+                               </div> 
+                              <div class="inputfield">
+                                  <label>Telefoonnummer</label>
+                                  <input type="text" class="input">
+                               </div> 
+                              <div class="inputfield">
+                                  <label>Address</label>
+                                  <textarea class="textarea"></textarea>
+                               </div> 
+                              <div class="inputfield">
+                                  <label>Postcode</label>
+                                  <input type="text" class="input">
+                               </div> 
+                              <div class="inputfield terms">
+                                  <label class="check">
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <p>Agreed to terms and conditions</p>
+                               </div> 
+                              <div class="inputfield">
+                                <input type="submit" value="Registreer" class="btn">
+                              </div>
+                            </div>
+                            <div class="form-buttons">
+                                <a onclick="DOM.displayLoginForm()">Heb je al een account? Login</a>
+                                <a id="exit-button" onclick="DOM.closeForms()">Exit</a>
+                            </div>
+                        </div>	
+            
+                        <div style="display: none" class="wrapper" id="login-form">
+                            <div class="title">
+                              Login Formulier
+                            </div>
+                            <div class="form">
+                                <div class="inputfield">
+                                    <label>Email Address</label>
+                                    <input type="text" class="input">
+                                </div> 
+                               <div class="inputfield">
+                                  <label>Wachtwoord</label>
+                                  <input type="password" class="input">
+                               </div>  
+                              <div class="inputfield">
+                                <input type="submit" value="Registreer" class="btn">
+                              </div>
+                            </div>
+                            <div class="form-buttons">
+                                <a onclick="DOM.displayRegisterForm()">Heb je al een account? Registreer</a>
+                                <a id="exit-button" onclick="DOM.closeForms()">Exit</a>
+                            </div>
+                        </div>	
+                        <h1>Wie ben ik?</h1>
+                        <p>Mijn naam is Gijs Linders. 
+
+
+                            Vroeger was ik altijd bezig met sporten. Ik lette eigenlijk niet op mijn voeding en merkte weinig voorruitgang. Hierdoor wilde ik naar iemand toe gaan die hier meer verstand van had. Echter ben ik 2x bij verschillende personal trainers geweest waar ik niets anders bereikte dan een lege portemonne. 
+                            
+                            
+                            Sporten kun je om meerdere redenen doen. Je kunt je afreageren, in contact komen met nieuwe mensen of prestatie gericht ergens voor trainen. Toen ik mezelf ging verdiepen in de fitness,voeding en de mogelijkheden die er waren leerde ik veel van andere sporters die al langer actief waren in de sportschool. In dit jaar moest ik onverwachts geopereerd worden en brak ik mijn hand. Ik zou niet meer kunnen doen wat ik het liefste deed SPORTEN!. Alleen was ik er van overtuigd dat je door sporten juist sterker kunt worden, ik bouwde alles langzaam op en kwam in een korte tijd 4 kilo aan in spiermassa. Toen ik eenmaal terug op de sportschool kwam waar ik altijd ging sporten, kreeg ik veel complimenten en kwamen andere sporters die mij vroeger tips gaven, zelf om tips vragen. Hierna ging ik de opleiding Cios doen omdat ik later iets wilde bereiken met dat gene waarin ik goed werd, andere mensen helpen naar hun doel! 
+                            
+                            Ik ging door met sporten en kwam in aanraking met powerliften. Ik maakte een eigen trainingsschema en schreef mezelf in voor mijn eerste wedstrijd. Ik werd 6de op het NK powerliften, deze ervaring neem ik voor altijd mee in mijn rugzak zodat ik andere powerlifters kan helpen naar hun wedstrijd toe, ook geef ik nu powerlift Clinics op verschillende sportscholen! Na 2 jaar hard getraind te hebben heb ik mee gedaan aan mijn eerste bodybuilding men fysiek wedstrijd, dit wilde ik om 2 redenen. 1: ik wil mezelf beter kunnen inleven in andere mensen en ervaren hebben hoe het is om het maximale van jezelf te vragen. en 2: omdat het natuurlijk super gaaf is om op een podium aan andere mensen te mogen laten zien, waar jij hard voor getraind hebt. Ik kwam erachter dat het zwaarder was dan ik verwacht had, ik had geen coach en kwam erachter hoe zwaar het kan zijn om alles zelf te moeten doen. Mijn hele leefstijl gooide ik hierbij onderste boven maar ik ben blij dat ik dat heb gedaan. Het is een ervaring om nooit te vergeten!
+                            
+                            
+                            Buiten dat het super gaaf is om mee te doen aan wedstrijden of evenementen zoals de Viking run, wilde ik zo veel mogelijk ervaring opdoen in de fitness en in de sport, zodat ik mensen die naar mij toe komen zo goed mogelijk kan begeleiden. ik weet hoe het is om een enorme berg te moeten beklimmen, mijn doelstelling is dan ook om andere mensen de kennis te geven die ik heb gekregen over sport, mensen gezonder te laten leven en doelstellingen te bereiken!</p>
+                    </div>
+                </div>
+                <div class="five">
+                    <div class="about-info-image">
+                        <img class="person-image" src="img/about-personal-image.jpg" alt="Gijs persoonlijke foto" height="500px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="row">
+        <footer>
+            <div class="footer-title">
+                <h1>Volg ons</h1>
+            </div>
+            <div class="footer-media-links">
+                <a href="#"><img src="img/001-instagram.png" alt="instagram-icon"></a>
+                <a id="footer-middle-media-link" href="#"><img src="img/002-facebook.png" alt="facebook-icon"></a>
+                <a href="#"><img src="img/003-linkedin.png" alt="linkedin-icon"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

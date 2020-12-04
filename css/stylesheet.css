@@ -14,7 +14,16 @@ body {
 
 /* NAV STYLES */
 
-nav {
+/*Other nav*/
+
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: #36353a;
+}
+
+/* Home nav */
+.home-nav {
     background: url(../img/background-image-home.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -233,6 +242,11 @@ footer .footer-title h1{
     margin: 20px auto;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
     padding: 30px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;   
   }
   
   .wrapper .title {
@@ -404,3 +418,39 @@ footer .footer-title h1{
       flex-direction: row;
     }
   }
+
+/* ABOUT STYLES */
+
+.about-info-container {
+    margin-top: 30px;
+}
+
+.about-info-text {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.about-info-container .about-info-text h1 {
+    font-family: 'Oswald';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 22px;
+}
+
+
+.about-info-container .about-info-text p{
+    font-family: 'Karla';
+    color: #2a2a2a;
+    line-height: 1.2;
+    letter-spacing: 0.3;
+    margin-top: 10px;
+}
+
+.about-info-image {
+    text-align: center;
+    padding-right: 30px;
+}
+
+
+
