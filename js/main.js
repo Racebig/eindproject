@@ -14,7 +14,7 @@ const DOM = (() => {
     const displayLoginForm = () => {
         registerForm.style.display = "none";
         loginForm.style.display = "block";
-        loginForm.style.marginTop = "250px";
+        loginForm.style.marginTop = "150px";
     }
 
     const closeForms = () => {
