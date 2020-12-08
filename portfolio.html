@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/12-column-grid.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&   display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Portfolio</title>
+</head>
+<body>
+  <div class="row">
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">General Shape</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="succes.html">Succes verhalen</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="#">Producten</a></li>
+                <li><a onclick="DOM.displayLoginForm()">Inloggen</a></li>
+                <li><a href="#">Winkelwagen</a></li>
+            </ul>
+
+            <div style="display: none" class="wrapper" id="register-form">
+                <div class="title">
+                  Registratie Formulier
+                </div>
+                <div class="form">
+                   <div class="inputfield">
+                      <label>Voornaam</label>
+                      <input type="text" class="input">
+                   </div>  
+                    <div class="inputfield">
+                      <label>Achternaam</label>
+                      <input type="text" class="input">
+                   </div>  
+                   <div class="inputfield">
+                      <label>Wachtwoord</label>
+                      <input type="password" class="input">
+                   </div>  
+                  <div class="inputfield">
+                      <label>Bevestig Wachtwoord</label>
+                      <input type="password" class="input">
+                   </div> 
+                    <div class="inputfield">
+                      <label>Gender</label>
+                      <div class="custom_select">
+                        <select>
+                          <option value="">Select</option>
+                          <option value="male">Man</option>
+                          <option value="female">Vrouw</option>
+                          <option value="overig">Overig</option>
+                        </select>
+                      </div>
+                   </div> 
+                    <div class="inputfield">
+                      <label>Email Address</label>
+                      <input type="text" class="input">
+                   </div> 
+                  <div class="inputfield">
+                      <label>Telefoonnummer</label>
+                      <input type="text" class="input">
+                   </div> 
+                  <div class="inputfield">
+                      <label>Address</label>
+                      <textarea class="textarea"></textarea>
+                   </div> 
+                  <div class="inputfield">
+                      <label>Leeftijd</label>
+                      <input type="date" class="input">
+                   </div> 
+                  <div class="inputfield terms">
+                      <label class="check">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                      </label>
+                      <p>Agreed to terms and conditions</p>
+                   </div> 
+                  <div class="inputfield">
+                    <input type="submit" value="Registreer" class="btn">
+                  </div>
+                </div>
+                <div class="form-buttons">
+                    <a onclick="DOM.displayLoginForm()">Heb je al een account? Login</a>
+                    <a id="exit-button" onclick="DOM.closeForms()">Exit</a>
+                </div>
+            </div>	
+
+            <div style="display: none" class="wrapper" id="login-form">
+                <div class="title">
+                  Login Formulier
+                </div>
+                <div class="form">
+                    <div class="inputfield">
+                        <label>Email Address</label>
+                        <input type="text" class="input">
+                    </div> 
+                   <div class="inputfield">
+                      <label>Wachtwoord</label>
+                      <input type="password" class="input">
+                   </div>  
+                  <div class="inputfield">
+                    <input type="submit" value="Registreer" class="btn">
+                  </div>
+                </div>
+                <div class="form-buttons">
+                    <a onclick="DOM.displayRegisterForm()">Heb je al een account? Registreer</a>
+                    <a id="exit-button" onclick="DOM.closeForms()">Exit</a>
+                </div>
+            </div>
+            </div>	
+        </nav>
+    </header>
+  </div>
+
+    <div class="portfolio-container">
+        <div class="img">
+            <img src="img/portfolio-long-image.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image1.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+            <img src="img/portfolio-image2.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image3.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image4.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image5.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image6.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image7.jpg" alt="portfolio foto">
+        </div>
+        <div class="img">
+          <img src="img/portfolio-image8.jpg" alt="portfolio foto">
+        </div>
+    </div>
+    
+    <div class="row">
+      <footer>
+          <div class="footer-title">
+              <h1>Volg ons</h1>
+          </div>
+          <div class="footer-media-links">
+              <a href="#"><img src="img/001-instagram.png" alt="instagram-icon"></a>
+              <a id="footer-middle-media-link" href="#"><img src="img/002-facebook.png" alt="facebook-icon"></a>
+              <a href="#"><img src="img/003-linkedin.png" alt="linkedin-icon"></a>
+          </div>
+      </footer>
+  </div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
